@@ -1,0 +1,105 @@
+/* Presets Tema Warna */
+:root {
+  --primary: #7a3e1d;
+  --primary-hover: #5d2e14;
+  --primary-light: #faf6f0;
+  --primary-accent: #fef3c7;
+  --primary-border: #fde68a;
+  --primary-text: #78350f;
+}
+
+/* Preset 1: Amber Cokelat (Default) */
+.theme-amber {
+  --primary: #7a3e1d;
+  --primary-hover: #5d2e14;
+  --primary-light: #faf6f0;
+  --primary-accent: #fef3c7;
+  --primary-border: #fde68a;
+  --primary-text: #78350f;
+}
+
+/* Preset 2: Abu Modern (Elegan) */
+.theme-abu {
+  --primary: #334155;
+  --primary-hover: #1e293b;
+  --primary-light: #f8fafc;
+  --primary-accent: #e2e8f0;
+  --primary-border: #cbd5e1;
+  --primary-text: #0f172a;
+}
+
+/* Preset 3: Hijau Segar */
+.theme-hijau {
+  --primary: #15803d;
+  --primary-hover: #166534;
+  --primary-light: #f0fdf4;
+  --primary-accent: #dcfce7;
+  --primary-border: #bbf7d0;
+  --primary-text: #14532d;
+}
+
+/* Preset 4: Merah Cabai */
+.theme-merah {
+  --primary: #b91c1c;
+  --primary-hover: #991b1b;
+  --primary-light: #fef2f2;
+  --primary-accent: #fee2e2;
+  --primary-border: #fecaca;
+  --primary-text: #7f1d1d;
+}
+
+/* Preset 5: Biru Khas */
+.theme-biru {
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --primary-light: #eff6ff;
+  --primary-accent: #dbeafe;
+  --primary-border: #bfdbfe;
+  --primary-text: #1e3a8a;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--primary-light);
+  color: #2d3748;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.bg-dynamic-primary {
+  background-color: var(--primary);
+}
+.hover\:bg-dynamic-hover:hover {
+  background-color: var(--primary-hover);
+}
+.text-dynamic-primary {
+  color: var(--primary);
+}
+.border-dynamic-primary {
+  border-color: var(--primary);
+}
+.bg-dynamic-light {
+  background-color: var(--primary-light);
+}
+.bg-dynamic-accent {
+  background-color: var(--primary-accent);
+}
+.border-dynamic-border {
+  border-color: var(--primary-border);
+}
+.text-dynamic-dark {
+  color: var(--primary-text);
+}
+
+/* Custom Focus Ring untuk Tema Dinamis */
+.focus-dynamic-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary);
+}
